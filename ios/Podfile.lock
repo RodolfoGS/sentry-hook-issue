@@ -3,8 +3,12 @@ PODS:
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
   - DoubleConversion (1.1.6)
+  - EXApplication (2.2.1):
+    - UMCore
   - EXConstants (9.1.1):
     - UMConstantsInterface
+    - UMCore
+  - EXDevice (2.2.1):
     - UMCore
   - EXErrorRecovery (1.2.1):
     - UMCore
@@ -333,6 +337,12 @@ PODS:
     - React
   - RNScreens (2.9.0):
     - React
+  - RNSentry (1.6.2):
+    - React
+    - Sentry (~> 5.1.8)
+  - Sentry (5.1.9):
+    - Sentry/Core (= 5.1.9)
+  - Sentry/Core (5.1.9)
   - UMAppLoader (1.2.0)
   - UMBarCodeScannerInterface (5.2.1)
   - UMCameraInterface (5.2.1)
@@ -356,7 +366,9 @@ PODS:
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - EXApplication (from `../node_modules/expo-application/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
+  - EXDevice (from `../node_modules/expo-device/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
@@ -416,6 +428,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - "RNSentry (from `../node_modules/@sentry/react-native`)"
   - UMAppLoader (from `../node_modules/unimodules-app-loader/ios`)
   - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
   - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
@@ -444,13 +457,18 @@ SPEC REPOS:
     - Flipper-RSocket
     - FlipperKit
     - OpenSSL-Universal
+    - Sentry
     - YogaKit
 
 EXTERNAL SOURCES:
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  EXApplication:
+    :path: "../node_modules/expo-application/ios"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
+  EXDevice:
+    :path: "../node_modules/expo-device/ios"
   EXErrorRecovery:
     :path: "../node_modules/expo-error-recovery/ios"
   EXFileSystem:
@@ -525,6 +543,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSentry:
+    :path: "../node_modules/@sentry/react-native"
   UMAppLoader:
     :path: "../node_modules/unimodules-app-loader/ios"
   UMBarCodeScannerInterface:
@@ -559,7 +579,9 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
+  EXApplication: d7ccb60c33fa4d506967ff6adde42a0f872d69ad
   EXConstants: f907b3b6ce16e20d1750f22af1e095e924574bcb
+  EXDevice: befd3b2619915e615c3753c9f83309808aa0cdf5
   EXErrorRecovery: 500f1d4231c534f415e86caeb3fc677c7f5dd23c
   EXFileSystem: 76875135b61708b9afa7e6a89b72a60ba0fdfa20
   EXFont: d6cabb73989fc29296972c52915a023f46b2c7f5
@@ -605,6 +627,8 @@ SPEC CHECKSUMS:
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
+  RNSentry: 9d68f0ce79608e90e10ac320c409321efc114b8f
+  Sentry: 81f7f2bd3cb041137ea7efcde3aa5ad0d5a67632
   UMAppLoader: 61049c8d55590b74e9ae1d5429bf68d96b4a2528
   UMBarCodeScannerInterface: e5e4c87797d3d01214e25cd1618866caf5d4f17f
   UMCameraInterface: 415ac060034edecacdbbaa739c223e3f276e0056
