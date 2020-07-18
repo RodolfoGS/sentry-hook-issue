@@ -1,0 +1,12 @@
+{
+  "name": "SentryHookIssue",
+  "displayName": "SentryHookIssue",
+  "expo": {
+    "name": "SentryHookIssue",
+    "slug": "SentryHookIssue",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
