@@ -2,10 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import * as Sentry from '@sentry/react-native';
+import * as Sentry from 'sentry-expo';
 
 Sentry.init({
   dsn: '__DSN__',
+  enableInExpoDevelopment: true,
+  debug: true,
 });
 
 
