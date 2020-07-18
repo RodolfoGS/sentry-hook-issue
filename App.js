@@ -2,6 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import * as Sentry from '@sentry/react-native';
+
+Sentry.init({
+  dsn: '__DSN__',
+});
+
+
 export default function App() {
   return (
     <View style={styles.container}>
