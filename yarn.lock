@@ -6675,10 +6675,10 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-sentry-expo@3.0.0-rc1:
-  version "3.0.0-rc1"
-  resolved "https://registry.yarnpkg.com/sentry-expo/-/sentry-expo-3.0.0-rc1.tgz#07651cf3f7b508eafe1d8ea756b33bcd2dc89d0e"
-  integrity sha512-RFHCv5EFXdupYJA3oDNXV+GF0E78ivzsIkcmo6STKQDQPf+lri1JE//J0xd1ZAezkjXa6r7al4dPfx9mI/am/w==
+sentry-expo@^3.0.0-rc2:
+  version "3.0.0-rc2"
+  resolved "https://registry.yarnpkg.com/sentry-expo/-/sentry-expo-3.0.0-rc2.tgz#cc2942423b1040743f7e9a99a9acc08b91df2faa"
+  integrity sha512-SPjvFH3SQGTTz0KK3dXbV+5nK+9jEXOlaz2YKC9etUVeWQLg1RFkCiqvjx3roaCFdAvx85oAU5gHy0phI8c52A==
   dependencies:
     "@expo/spawn-async" "^1.2.8"
     "@sentry/browser" "^5.15.5"
