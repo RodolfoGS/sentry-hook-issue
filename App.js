@@ -10,6 +10,7 @@ Sentry.init({
   debug: true,
 });
 
+Sentry.Native.setRelease(Updates.manifest.revisionId);
 
 export default function App() {
 
@@ -26,7 +27,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Button onPress={handleCrash} title="Crash Now" />
-      <Text>{"\n"}</Text>
+      <Text>Release: {Updates.manifest.revisionId}</Text>
       <Button onPress={handleForceUpdate} title="Force Update" />
     </View>
   );
